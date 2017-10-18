@@ -7,8 +7,10 @@
 header
 {
 	width: 100%;
-	background: #045FB4;
+	background: rgba(0,0,0,.8); /*80 % de transparencia*/
 	height: 80px;
+	position: fixed; /*cabecera fija*/
+	z-index: 10; /*Indice de importancia*/
 }
 
 .ancho
