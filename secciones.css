@@ -1,17 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
-h1, h2, h3, h4, h5, h6
+h1, h2, h6
 {
 	font-family: 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
+	letter-spacing: 1px;
 }
+
 
 h2{
 	font-size: 26px;
 	color: #333;
 }
 
+h4
+{
+	margin-top: 15px;
+	font-size: 16px;
+	text-align: center;
+}
+
+h5
+{
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.5; /*altura a cada letra*/
+	font-weight: normal;
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+p
+{
+	color: #888;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	text-align: center;
+
+}
 .wap
 {
 	width: 90%;
@@ -22,4 +48,72 @@ h2{
 {
 	margin-top: 60px;
 	text-align: center;
+}
+
+.contenedor-columnas
+{
+	width: 100%
+	margin: auto;
+	margin-bottom: 50px;
+}
+
+.columnasx3
+{
+	width: 33.333%;
+	float: left;
+	padding: 20px 20px; /*20px para arriba abajo izquierda y derecha*/
+	box-sizing: border-box;
+	margin: auto;
+}
+
+.columnasx3 img
+{
+	width: 100%;
+}
+
+.banner1
+{
+	width: 100%;
+	background: #1ABC9C;
+	clear: both; /*Limpia el sitio para evitar que se situe en un sitio donde no queremos*/
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	text-align: center; /*Letra centrada*/
+	box-sizing: border-box; 
+	transition: 0.4s;
+
+}
+
+.banner1:hover{ /*Para que cuando pasemos el raton cambie de color*/
+	background: #444;
+	transition: 0.4s; /*Transicion de segundos*/
+}
+
+.banner1 h3
+{
+	color: #fff;
+	font-size: 32px;
+}
+
+.banner1 a
+{
+	text-decoration: none; /*Quitar linea de enlaces*/
+	margin-left: 20px;
+	font-weight: bold;
+	color: #fff;
+	border-bottom: 2px solid #fff; /*Linea de enlace con nuestra apariencia*/
+}
+
+.columnasx3 i
+{
+	float: left;
+	padding-right: 10px;
+	color: #444;
+}
+
+.columnasx3 h4
+{
+	padding-bottom: 20px;
 }
