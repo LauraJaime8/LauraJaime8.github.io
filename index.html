@@ -7,8 +7,33 @@
 	<link rel="stylesheet" type="text/css" href="slider.css">
 	<link rel="stylesheet" type="text/css" href="animate.css">
 	<link rel="stylesheet" type="text/css" href="secciones.css">
+	<link rel="stylesheet" type="text/css" href="formulario.css">
+	<link rel="stylesheet" type="text/css" href="responsive.css">
 	<script src="https://use.fontawesome.com/362322430e.js"></script> <!-- Para los iconos mediante el link-->
+	<link rel="stylesheet" type="text/css" href="tabla.css">
+	<link rel="stylesheet" type="text/css" href="redes-sociales.css">
+	
+	<!-- Scroll -->
+	<script src="smooth-scroll.min.js"></script>
+	<script>
+		var scroll = new SmoothScroll('a[href*="#"]', {
+		// Selectors
+		ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+		header: null, // Selector for fixed headers (must be a valid CSS selector)
 
+		// Speed & Easing
+		speed: 500, // Integer. How fast to complete the scroll in milliseconds
+		offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+		easing: 'easeInOutCubic', // Easing pattern to use
+		customEasing: function (time) {}, // Function. Custom easing pattern
+
+		// Callback API
+		before: function () {}, // Callback to run before scroll
+		after: function () {} // Callback to run after scroll
+		});
+	</script>	
+
+	
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108109552-2"></script>
@@ -23,15 +48,17 @@
 
 </head>
 <body>
+
 	<header>
-		<div class="ancho">
+		<!-- Este es el menu de la pagina -->
+		<div class="ancho" id="inicio">
 			<div class="logo">
 				<p><a href="index.html">Laura Jaime</a></p>
 			</div>
-			<nav >
+			<nav>
 				<ul>
-					<li><a href="#">Inicio</a></li>
-					<li><a href="#">Blog</a></li>
+					<li><a data-scroll href="#inicio">Inicio</a></li>
+					<li><a href=blog.html>Blog</a></li>
 					<li><a href="#">Mis proyectos</a></li>
 					<li><a href="#">Contáctame</a></li>
 				</ul>
@@ -57,19 +84,19 @@
 
 	<section class="contenedor-columnas">
 		<div class="columnasx3">
-			<img src="imagenes/estudio.png">
+			<img src="imagenes/estudio.PNG">
 			<h4>Estudios</h4>
 			<h5>Sobre mi formación</h5>
 			<p>Soy estudiante del grado de ingeniería informática en la Escuela Superior de Informática en la UCLM</p>
 		</div>
 		<div class="columnasx3">
-			<img src="imagenes/yo.png">
+			<img src="imagenes/yo.PNG">
 			<h4>¿Quién soy yo?</h4>
 			<h5>Sobre mi</h5>
 			<p>Soy estudiante del grado de ingeniería informática en la Escuela Superior de Informática en la UCLM</p>
 		</div>
 		<div class="columnasx3">
-			<img src="imagenes/art.jpg">
+			<img src="imagenes/art.jpeg">
 			<h4>Mis intereses</h4>
 			<h5>Sobre mis aficiones</h5>
 			<p>Soy estudiante del grado de ingeniería informática en la Escuela Superior de Informática en la UCLM</p>
@@ -78,7 +105,7 @@
 </section>
 
 <section class="banner1">
-	<h3 >Banner para quE?<a href="#">enlace externo</a></h3>
+	<h3 >Banner para que?<a href="#">enlace externo</a></h3>
 </section>
 
 
@@ -124,8 +151,107 @@
 	</section>
 </section>
 
+<section class="banner2">
+	<h3 >¿Te interesan mis proyectos?<a href="https://github.com/laurajaime8">Aquí puedes encontrarlos <i class="fa fa-github" aria-hidden="true"></i></a></h3>
+</section>
+
+<section class="wap">
+	<section class="bienvenidos">
+		<h2>Mis herramientas conocidas</h2>	
+		<h3>LAs herramientas que conozco</h3>	
+	</section>
+
+	<section class="tabla">
+		<div class="tablax4">
+			<div class="caja-herramienta">
+				<div class="icono-herramienta"><i class="fa fa-code" aria-hidden="true"></i>
+</div>
+				<div><h4>Eclipse</h4></div>
+				<div>
+					<ul class="lista-caracteristicas">
+						<li class="lista-prop">J2EE</li>
+						<li class="lista-prop">Integración GitHub</li>
+						<li class="lista-prop">Maven</li>
+						<li class="lista-prop">Y más...</li>
+					</ul>
+				</div>
+			</div>
+			
+		</div>
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+</section>	
+
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24810.261660938264!2d-3.92698795!3d38.98604375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6bdcb33d97174d%3A0xefaf23e8b1e79c2b!2sCiudad+Real%2C+Cdad.+Real!5e0!3m2!1ses!2ses!4v1508489711141" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+<section class="wap">
+	<section class="bienvenidos">
+		<h2>Contáctame</h2>	
+		<h3></h3>	
+	</section>
+
+	<section class="dos-columnas">
+		<div class="formulario">
+			<h4>Formulario de contacto</h4>
+			<form action="enviar.php" method="post">
+				<input type="text" name="nombre" placeholder="Nombre" class="caja1" required>
+				<input type="email" name="email" placeholder="E-mail" class="caja1" requiered>
+				<input type="tel" name="telefono" placeholder="Teléfono" class="caja1">
+				<input type="text" name="asunto" placeholder="Asunto" class="caja1" required>
+				<textarea name="mensaje" id="" cols="30" rows="10" class="caja2" placeholder="Deja tus comentarios aquí"></textarea>
+				<button type="submit" class="enviar-a mover">Enviar</button>
+			</form>
+		</div>
+
+		<div class="datos">
+			<ul class="datos-contacto">
+				<li><i class="fa fa-linkedin" aria-hidden="true"></i></li> 
+				<li><h3><a href="https://www.linkedin.com/in/laura-jaime-villamayor/">LinkedIn</a></h3></li>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i></li>
+				<li>laurajaimev8@gmail.com</li>
+			</ul>
+		</div>
+	</section>
+</section>	
+
+
+
+<footer>
+	<h5>Página creada por Laura Jaime Villamayor. Todos los derechos reservados. Octubre 2017</h5>
+	<img src="imagenes/logoMediano.jpg">
+
+
+</footer>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 <script src="particles.js"></script>  
 <script src="app.js"></script>
+<script src="scrollSuave.js"></script>
 <script src="alto.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
 </body>
