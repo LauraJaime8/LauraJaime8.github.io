@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 *
 {
@@ -9,7 +10,7 @@
 
 h1, h2, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-transform: uppercase;
 	font-weight: normal;
 	letter-spacing: 1px;
@@ -26,13 +27,13 @@ h4
 	margin-top: 16px;
 	font-size: 17px;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 }
 
 h5
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	line-height: 1.5; /*altura a cada letra*/
 	font-weight: normal;
 	padding: 10px 0;
@@ -42,7 +43,7 @@ h5
 p
 {
 	color: #888;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 	text-align: center;
 
@@ -59,6 +60,10 @@ p
 	text-align: center;
 }
 
+.bienvenidos h3
+{
+	font-family: 'Raleway', sans-serif;
+}
 .contenedor-columnas
 {
 	width: 100%
@@ -109,6 +114,7 @@ p
 	color: #fff;
 	font-size: 32px;
 	font-weight: normal;
+	font-family: 'Raleway', sans-serif;
 }
 
 .banner1 a
@@ -153,6 +159,7 @@ p
 	font-weight: normal;
 	height: 100%;
 	padding-top: 8%;
+	font-family: 'Raleway', sans-serif;
 }
 
 .banner2 a
