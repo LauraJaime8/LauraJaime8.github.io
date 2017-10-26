@@ -8,7 +8,6 @@ I have also used some javascript to renderized and decorated the web.
 Below are the .js used:
 
 * [Bootstrap.min.js](http://getbootstrap.com/docs/4.0/getting-started/download/)
-* html5shiv.js
-* jquery.nicescroll.min.js
-* showHide.js
-* scrolling-nav.js
+* [html5shiv.js](https://github.com/aFarkas/html5shiv) .The HTML5 Shiv enables use of HTML5 sectioning elements in legacy Internet Explorer and provides basic HTML5      styling for Internet Explorer 6-9, Safari 4.x (and iPhone 3.x), and Firefox 3.x.
+* [jquery.nicescroll.min.js](https://github.com/inuyaksa/jquery.nicescroll/releases)Is a jQuery Plugin for custom scrollbars on mobile and desktop browsers.
+* scrolling-nav.js. Is a jQuery to collapse the navbar on scroll.
