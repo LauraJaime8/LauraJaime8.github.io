@@ -189,12 +189,12 @@ width : 76px;
 #pricing_sec {
 padding : 70px 0;
 }
-.title_sec {
+.titulo_sec {
 margin : 0 auto;
 padding : 0 0 25px 0;
 text-align : center;
 }
-.title_sec h2 {
+.titulo_sec h2 {
 color : #606060;
 font-size : 12px;
 text-transform : uppercase;
@@ -301,10 +301,10 @@ transform : translateX(100%);
 .hover_effect_btn a:hover::before, .hover_effect_btn a:focus::before {
 transform : translateX(0%);
 }
-#protfolio_sec ul.filter {
+#proyectos_sec ul.filter {
 color : #2e2e2e;
 }
-#protfolio_sec ul.filter li {
+#proyectos_sec ul.filter li {
 color : #666666;
 cursor : pointer;
 display : inline-block;
@@ -314,22 +314,36 @@ margin-right : 5px;
 padding : 15px 35px;
 position : relative;
 }
-#protfolio_sec ul.filter li:hover {
+#proyectos_sec ul.filter li:hover {
 color : #36BFF3;
 }
-#protfolio_sec ul.filter li.active {
+#proyectos_sec ul.filter li.active {
 border-bottom : 1px solid #00AFF0;
 }
-#protfolio_sec .all-portfolios {
+#proyectos_sec .all-portfolios {
 margin-top : 20px;
 margin-left : -10px;
 }
-#protfolio_sec .single-portfolio {
+#proyectos_sec .all-portfolios img:hover {
+filter:  opacity(.6);
+}
+
+#proyectos_sec .all-portfolios img{
+width: 250px;
+height: 250px;
+}
+
+
+#proyectos_sec .all-portfolios p {
+text-align: center;
+}
+
+#proyectos_sec .single-portfolio {
 float : left;
 margin-bottom : 10px;
 width : 277px;
 }
-#protfolio_sec .single-portfolio:hover .img_hoverlay {
+#proyectos_sec .single-portfolio:hover .img_hoverlay {
 display : block;
 }
 #message {
@@ -477,7 +491,7 @@ font-size : 50px;
 position : relative;
 top : -50px;
 }
-#protfolio_sec {
+#proyectos_sec {
 background : none 0 0 repeat scroll #f0f0f0;
 padding : 70px 0;
 }
@@ -941,8 +955,8 @@ padding : 10px;
 margin-right : 5px;
 }
 .sngl_blg > img {
-width : 100%;
-height : 100%;
+width : 50%;
+height : 50%;
 }
 .author_dec h3 {
 margin : 0;
