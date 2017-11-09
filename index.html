@@ -12,7 +12,6 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/owl.carousel.css">
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="css/style.css">
 
@@ -24,8 +23,30 @@
   		      gtag('js', new Date());
 		        gtag('config', 'UA-108109552-2');
 	       </script>
+
+         <!-- Scroll suave -->
+         <script src="js/smooth-scroll.min.js"></script>
+         <script type="text/javascript">
+            var scroll = new SmoothScroll('a[href*="#"]', {
+              // Selectors
+            ignore: '[data-scroll-ignore]', // Selector for links to ignore (must be a valid CSS selector)
+            header: null, // Selector for fixed headers (must be a valid CSS selector)
+
+            // Speed & Easing
+            speed: 700, // Integer. How fast to complete the scroll in milliseconds
+            offset: 0, // Integer or Function returning an integer. How far to offset the scrolling anchor location in pixels
+            easing: 'easeInOutCubic', // Easing pattern to use
+            customEasing: function (time) {}, // Function. Custom easing pattern
+
+            // Callback API
+            before: function () {}, // Callback to run before scroll
+            after: function () {} // Callback to run after scroll
+            });
+         </script>
     </head>
 <body >
+
+
 
 <!-- Cabecera -->
 <header class="menu_sec navbar navbar-default navbar-fixed-top">
@@ -47,15 +68,13 @@
 							</button>
 						<div id="navbar">
                 <ul>
-								<li><a class="page-scroll" href="index.html">Inicio</a></li>
-								<li><a class="page-scroll" href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
-								<li><a href="#">Mis proyectos<i class="fa fa-angle-down"></i></a>
-								<ul>
-									<li><a class="page-scroll" href="#proyectos_sec">Ver mis proyectos</a></li>
-									<li><a class="page-scroll" href="proyectos.html" target="_blank" rel="noopener noreferrer">Página dedicada a mis proyectos</a></li>
-								</ul>
-								</li>
-								<li><a class="page-scroll" href="#ctn_sec">Contáctame</a></li>
+								<li><a data-scroll class="page-scroll" href="#nav_menu">Inicio</a></li>
+                <li><a data-scroll class="page-scroll" href="#sobremi_sec">Sobre mi</a></li>
+                <li><a class="page-scroll" href="#formacion_sec">Mi formación</a></li>
+
+								<li><a data-scroll class="page-scroll" href="#proyectos_sec">Mis proyectos</a></li>
+                <li><a data-scroll class="page-scroll" href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
+								<li><a data-scroll class="page-scroll" href="#ctn_sec">Contáctame</a></li>
 
 							</ul>
 						</div>
@@ -82,7 +101,7 @@
 						<div class="wrap_caption">
 						  <div class="caption_carousel">
 							<h1>Laura Jaime</h1>
-							<p>TODO SOBRE MI</p>
+							<p>Es importante pasarlo bien, pero también hay que sufrir un poco, porque, de lo contrario, no captas el sentido de la vida</p>
 						  </div>
 						</div>
 					</div>
@@ -101,12 +120,15 @@
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="titulo_sec">
-					<h1>Sobre mí</h1>
+					<h1>Sobre mi</h1>
 				</div>
 			</div>
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
 				<div class="sobremi">
-					<p>Me llamo Laura Jaime, tengo 23 años y estudio Ingeniería Informática en la Escuela Superior de Informática en la UCLM</p>
+          <img src="img/yo.png" alt="Mi foto">
+          <br>
+          <br>
+					<p>Me llamo Laura Jaime, tengo 23 años y estudio Ingeniería Informática en la Escuela Superior de Informática en la UCLM.  Me interesan las tecnologías y aprender cosas nuevas. No me cierro solo a mi profesión, pues también me gusta aprender cosas diferentes y me apasionan la lectura, la filosofía, el cine y la música.</p>
 				</div>
 			</div>
 		</div>
@@ -114,7 +136,96 @@
 </section>
 <!-- Fin sobre mi -->
 
+<!-- Mi formacion -->
+<section id="formacion_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="titulo_sec">
+					<h1>Mi formación</h1>
+				</div>
+			</div>
+		  <div class="formaciones">
+				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
+        <p><i class="fa fa-university" aria-hidden="true"></i>Formación oficial</p>
+          <a href="formacion.html"><ul>-Bachillerato de Ciencias en I.E.S Ramón Giraldo</ul></a>
+          <a href="formacion.html"><ul>-Grado en Ingeniería Informática</ul></a>
+        </ul>
 
+				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+          <p><i class="fa fa-book" aria-hidden="true"></i>Formación complementaria</p>
+            <a href="formacion.html"><ul>-CCNA Exploration - Aspectos básicos de networking de CISCO</ul></a>
+            <a href="formacion.html"><ul>-Introducción al desarrollo de videojuegos con Unity - Universidad Politécnica de Valencia</ul></a>
+            <a href="formacion.html"><ul>-HTML5 desde cero</ul></a>
+
+          </ul>
+				</ul>
+		  </div>
+		</div>
+	</div>
+</section>
+<!-- Fin mis habilidades -->
+
+
+
+<!-- Mis conocimientos -->
+<section id="conocimientos_sec">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs12 ">
+				<div class="titulo_sec">
+					<h1>Mis conocimientos</h1>
+					<h2>Adquiridos durante mi formación y de manera autónoma</h2>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="conoc">
+					<i class="fa fa-globe"></i>
+					<h2>idiomas</h2>
+					<div class="conoc_hoverly">
+						<i class="fa fa-globe"></i>
+						<h2>idiomas</h2>
+						<p>Español nativo e inglés nivel B1</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="conoc">
+					<i class="fa fa-file-code-o"></i>
+					<h2>Lenguajes de programación</h2>
+					<div class="conoc_hoverly">
+						<i class="fa fa-file-code-o"></i>
+						<h2>Lenguajes de programación</h2>
+						<p>Java, Javascript, Python, C, C#, HTML, CSS, Bootstrap</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="conoc">
+					<i class="fa fa-lock"></i>
+					<h2>Redes y seguridad</h2>
+					<div class="conoc_hoverly">
+						<i class="fa fa-lock"></i>
+						<h2>Redes y seguridad</h2>
+						<p>Conozco Linux, su funcionamiento y sus herramientas, SNMP.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+				<div class="conoc">
+					<i class="fa fa-database"></i>
+					<h2>Análisis de datos</h2>
+					<div class="conoc_hoverly">
+						<i class="fa fa-database"></i>
+						<h2>Análisis de datos</h2>
+						<p>Manejo de bases de datos, extracción de datos y manipulación de los mismos. También conozco algo de Big Data y aprendizaje automático</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Fin mi formacion-->
 
 <!-- Mis habilidades -->
 <section id="habilidades_sec">
@@ -129,22 +240,22 @@
 				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInLeft">
 					  <li class="progress">
 							<div class="progress-bar" data-width="80">
-								  Trabajo en equipo 80%
+								  Trabajo en equipo
 							</div>
 					  </li>
 					  <li class="progress">
 							<div class="progress-bar" data-width="90">
-								  Creatividad y pensamiento crítico 90%
+								  Creatividad y pensamiento crítico
 							</div>
 					  </li>
 					  <li class="progress">
-							<div class="progress-bar" data-width="90">
-									Capacidad de autoaprendizaje 90%
+							<div class="progress-bar" data-width="80">
+									Capacidad de autoaprendizaje
 							</div>
 					  </li>
 					  <li class="progress">
 							<div class="progress-bar" data-width="85">
-								  Resilencia 85%
+								  Resilencia
 							</div>
 					  </li>
 				</ul>
@@ -152,22 +263,22 @@
 				<ul class="col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
 					  <li class="progress">
 							<div class="progress-bar" data-width="70">
-								  Aplicaciones de escritorio 70%
+								  Aplicaciones de escritorio
 							</div>
 					  </li>
 					  <li class="progress">
 							<div class="progress-bar" data-width="85">
-								  Programación web 85
+								  Programación web
 							</div>
 					  </li>
 					  <li class="progress">
 							<div class="progress-bar" data-width="60">
-								  Análisis y exploración de datos 60%
+								  Análisis y exploración de datos
 							</div>
 					  </li>
 					  <li class="progress">
 							<div class="progress-bar" data-width="55">
-								Desarrollo móvil  55%
+								Desarrollo móvil
 							</div>
 					  </li>
 				</ul>
@@ -218,7 +329,7 @@
 					<div class="conoc_hoverly">
 						<i class="fa fa-lock"></i>
 						<h2>Redes y seguridad</h2>
-						<p>Conozco Linux, su funcionamiento y sus herramientas, SNMP y algo de metasploit</p>
+						<p>Conozco Linux, su funcionamiento y sus herramientas, SNMP.</p>
 					</div>
 				</div>
 			</div>
@@ -424,6 +535,8 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/appear.js"></script>
 <script src="js/main.js"></script>
+
+
 
 
 <script type="text/javascript">

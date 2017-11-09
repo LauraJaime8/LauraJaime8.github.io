@@ -2,6 +2,7 @@
 body {
 font-family : 'Lato', sans-serif;
 background : #fff;
+padding-top: 70px;
 }
 body p {
 color : #666666;
@@ -110,7 +111,7 @@ font-weight : bold;
 line-height : 32px;
 padding : 25px 14px;
 text-decoration : none;
-text-transform : capitalize;
+/*text-transform : capitalize;*/
 transition : all 0.4s 0s ease;
 }
 #nav_menu ul li {
@@ -161,7 +162,8 @@ background-size : cover;
 min-height : 500px;
 }
 #sobremi_sec {
-padding : 70px 0;
+padding : 70;
+background: #E6E6E6;
 }
 .nombre_cabecera img {
 float : left;
@@ -193,8 +195,20 @@ letter-spacing : 1px;
 margin : 0 auto;
 text-align : center;
 }
+.sobremi img{
+	/* cambia estos dos valores para definir el tamaño de tu círculo */
+    height: 150px;
+    width: 150px;
+    /* los siguientes valores son independientes del tamaño del círculo */
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+		border: 5px solid #666;
+}
 #habilidades_sec {
 padding-top : 30px;
+background : none 0 0 repeat scroll #D8D8D8;
 }
 .skills-wrap .container {
 padding : 70px 0;
@@ -203,19 +217,21 @@ padding : 70px 0;
 height : 35px;
 line-height : 35px;
 margin-bottom : 45px;
-background : #F0F0F0;
+background : #6E6E6E;
 border-radius : 0;
 box-shadow : none;
 list-style : none;
 }
 .progress-bar {
-font-weight : 600;
+font-weight : 900;
+font-size: 14px;
+font-style: normal;
 line-height : 35px;
 padding-left : 20px;
 text-align : left;
 }
 .progress-bar1 .progress-bar {
-background : #00AFF0;
+background : #0B3861;
 }
 #intereses_sec {
 padding-top : 30px;
@@ -294,7 +310,7 @@ transform : translateX(0%);
 color : #2e2e2e;
 }
 #proyectos_sec ul.filter li {
-color : #666666;
+color : #666676;
 cursor : pointer;
 display : inline-block;
 font-family : lato;
@@ -373,7 +389,7 @@ color : #fff;
 }
 .caption_carousel p {
 font-family : lato;
-font-size : 14px;
+font-size : 17px;
 color : #f6f6f6;
 border-top : 1px solid #fff;
 border-bottom : 1px solid #fff;
@@ -405,31 +421,9 @@ width : 25px;
 height : 7px;
 background-color : #00AFF0;
 }
-#counting_sec {
-background : none 0 0 repeat scroll #f0f0f0;
-padding : 90px 0;
-}
-.counting_sl h2 {
-color : #515050;
-font-size : 48px;
-}
-.counting_sl h4 {
-font-size : 18px;
-color : #515050;
-text-transform : uppercase;
-font-weight : 300;
-}
-.counting_sl {
-text-align : center;
-}
-.counting_sl i {
-color : #515050;
-float : left;
-font-size : 35px;
-margin-top : 10px;
-}
 #conocimientos_sec {
 padding : 70px 0;
+background: #E6E6E6;
 }
 .conoc {
 
@@ -481,7 +475,7 @@ position : relative;
 top : -50px;
 }
 #proyectos_sec {
-background : none 0 0 repeat scroll #f0f0f0;
+background : none 0 0 repeat scroll #D8D8D8;
 padding : 70px 0;
 }
 #tm_sec {
@@ -750,6 +744,7 @@ padding : 100px 0;
 background : none 0 0 repeat scroll #353638;
 border : none 0;
 margin : 0;
+margin-bottom: 1;
 }
 .post_info i {
 background : none 0 0 repeat scroll #00aff0;
@@ -893,4 +888,14 @@ width : 355px !important ;
 }
 .single_cnt_m {
 width : 731px !important ;
+}
+
+.formaciones p{
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.formaciones ul{
+  font-size: 15px;
 }
