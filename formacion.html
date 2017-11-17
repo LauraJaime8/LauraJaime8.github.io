@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laura Jaime - Formacion</title>
+<!--
+
+Template 2084 Zipper
+
+http://www.tooplate.com/view/2084-zipper
+
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/estilo-formacion.css">
+
+</head>
+
+    <body>
+      <!-- cabecera -->
+      <header class="menu_sec navbar navbar-default navbar-fixed-top">
+      	<div class="container">
+      		<div class="row">
+      			<div class="col-lg-3 col-md-3 col-sm-12">
+      				<div class="nombre_cabecera">
+      					<a href="index.html">LAURA JAIME</a>
+      				</div>
+      			</div>
+      			<div class="col-lg-9 col-md-9 col-sm-12">
+      				<div class="menu_cabecera">
+      					<div class="main_menu">
+      						<nav id="nav_menu">
+      							<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+      							<span class="icon-bar"></span>
+      							<span class="icon-bar"></span>
+      							<span class="icon-bar"></span>
+      							</button>
+      						<div id="navbar">
+                      <ul>
+      								<li><a data-scroll class="page-scroll" href="#nav_menu">Inicio</a></li>
+                      <li><a data-scroll class="page-scroll" href="#sobremi_sec">Sobre mi</a></li>
+                      <li><a class="page-scroll" href="#formacion_sec">Mi formación</a></li>
+
+      								<li><a data-scroll class="page-scroll" href="#proyectos_sec">Mis proyectos</a></li>
+                      <li><a data-scroll class="page-scroll" href="blog.html" target="_blank" rel="noopener noreferrer">Blog</a></li>
+      								<li><a data-scroll class="page-scroll" href="#ctn_sec">Contáctame</a></li>
+
+      							</ul>
+      						</div>
+      						</nav>
+      					</div>
+
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </header>
+      <!-- Fin cabecera -->
+
+            <!-- Giraldo-->
+            <section class="tm-section tm-section-giraldo" id="giraldo">
+                <div class="tm-page-content-width">
+                    <div class="tm-bg-black-translucent tm-content-box tm-content-box-right tm-flex-center">
+                        <div class="tm-content-box-inner">
+                            <h2 class="tm-section-title">Bachillerato de Ciencias en I.E.S Ramón Giraldo</h2>
+                            <p>Estudié toda mi formación E.S.O y Bachillerato de ciencias en el instituto Ramón Giraldo en Villanueva de los Infantes. Fué una etapa inolvidable tanto por las cosas aprendidas como por las experiencias que me llevé.</p>
+                            <p>Este centro cuenta con el programa <a href="http://www.erasmusplus.gob.es/">Erasmus+</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- ESI -->
+            <section class="tm-section tm-section-services" id="esi">
+                <div class="tm-page-content-width">
+                    <div class="tm-bg-black-translucent tm-content-box tm-flex-center">
+                        <div class="tm-content-box-inner">
+                            <h2 class="tm-section-title">Grado en Ingeniería Informática</h2>
+                            <p>Phasellus fringilla pharetra nunc sit amet fringilla. Vestibulum augue turpis, molestie sit amet odio eget, ornare mattis nisl.</p>
+                            <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer ut justo arcu. Nullam a semper odio. Nam et conque libero, et placerat est.</p>
+                            <p>Integer consectetur hendrerit dolor, quis scelerisque risus mattis quis. Pellentesque dapibus ornare nisl. Fusce facilisis pulvinar magna. Class aptent taciti sociosqu.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+        </div>
+
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
+        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>  <!-- Single page nav (https://github.com/ChrisWojcik/single-page-nav) -->
+
+        <script>
+
+            // Check scroll position and add/remove background to navbar
+            function checkScrollPosition() {
+
+                if($(window).width() < 767) {
+                    $(".tm-nav").removeClass("scroll");
+                    return;
+                }
+
+                if($(window).scrollTop() > 50) {
+                  $(".tm-nav").addClass("scroll");
+              } else {
+                  $(".tm-nav").removeClass("scroll");
+              }
+            }
+
+            $(document).ready(function () {
+                // Single page nav
+                $('.tm-nav').singlePageNav({
+                    offset: 57,
+                    filter: ':not(.external)',
+                    updateHash: true
+                });
+
+                checkScrollPosition();
+
+                // navbar
+                $('.navbar-toggle').click(function(){
+                    $('.main-menu').toggleClass('show');
+                });
+
+                $('.main-menu a').click(function(){
+                    $('.main-menu').removeClass('show');
+                });
+            });
+
+            $(window).on("scroll", function() {
+                checkScrollPosition();
+            });
+
+            $('#tmNavbar a').click(function(){
+                $('#tmNavbar').collapse('hide');
+            });
+
+        </script>
+
+</body>
+</html>
