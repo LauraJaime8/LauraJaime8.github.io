@@ -622,12 +622,7 @@ padding : 3px;
 background : none 0 0 repeat scroll #363636;
 text-align : center;
 }
-.map > h1 {
-color : #fff;
-font-size : 20px;
-font-weight : normal;
-text-transform : uppercase;
-}
+
 #ft_sec {
 padding : 70px 0;
 }
@@ -810,12 +805,14 @@ width : 731px !important ;
 .formaciones p{
   text-transform: uppercase;
   text-decoration: underline;
-  font-size: 30px;
+  font-size: 25px;
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .formaciones ul{
-  font-size: 15px;
+  font-size: 16px;
 }
+
 
 #formacion_sec{
   background: #2E2E2E;
