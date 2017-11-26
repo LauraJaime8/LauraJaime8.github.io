@@ -77,6 +77,8 @@ min-height : 500px;
 padding : 70;
 background: #E6E6E6;
 }
+
+
 .nombre_cabecera img {
 float : left;
 margin-right : 30px;
@@ -106,7 +108,7 @@ letter-spacing : 1px;
 }
 .titulo_sec img{
   /* cambia estos dos valores para definir el tamaño de tu círculo */
-    height: 150px;
+  height: 150px;
     width: 150px;
     /* los siguientes valores son independientes del tamaño del círculo */
     background-repeat: no-repeat;
@@ -340,8 +342,10 @@ background-color : #00AFF0;
 }
 #conocimientos_sec {
 padding : 70px 0;
-background: #E6E6E6;
+background: #2E2E2E;
 }
+
+
 .conoc {
 
 transition: all 1s ease 0s;
@@ -820,4 +824,100 @@ width : 731px !important ;
 
 #formacion_sec h1{
   color: white;
+}
+
+#habilidades_sec{
+  background-color: #E6E6E6 ;
+}
+
+
+#habilidades_sec p{
+  color: black;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+#habilidades_sec h2 {
+  color: #0f283e;
+  font-size: 4.4em;
+  font-weight: 800;
+  line-height: 0.9em;
+  margin: 0 100px;
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 0.875em;
+  line-height: 1.8em;
+}
+#habilidades_sec h3 {
+  color: #577285;
+  font-size: 0.875em;
+  line-height: 1.8em;
+}
+#habilidades_sec h4 {
+  font-size: 10px;
+  line-height: 1.8em;
+}
+
+#habilidades_sec p{
+  font-size: 0.875em;
+  line-height: 1.8em;
+  text-transform:none;
+
+
+}
+#habilidades_sec h3 strong {
+  color: #0f283e;
+}
+#habilidades_sec h6 {
+  font-size: 1em;
+  font-weight: 300;
+  margin: 30px 100px;
+  text-align: right;
+}
+.features .phone {
+  float: right;
+  margin: 0 78px 0 0;
+  width: 400px;
+}
+.features .device {
+  float: left;
+  margin: 20px 0;
+}
+.features .device a {
+  display: block;
+}
+.features .device img {
+  height: 150px;
+  width: auto;
+}
+#habilidades_sec .features-item {
+  margin: 0px 20px 20px 20px;
+}
+#habilidades_sec .features-item h4 {
+  font-size: 15px;
+  color: black;
+}
+#habilidades_sec .features-item .icon {
+  background-color: #9E9E9E;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #212121;
+  cursor: context-menu;
+  display: block;
+  font-size: 1.3em;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 60px;
+}
+#habilidades_sec .features-item .icon:hover {
+  background-color: #757575;
+  color: #FFEB3B;
 }
