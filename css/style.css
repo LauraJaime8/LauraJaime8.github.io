@@ -232,7 +232,7 @@ color : #2e2e2e;
 color : #666676;
 cursor : pointer;
 display : inline-block;
-font-family : lato;
+font-family: 'Roboto', sans-serif;
 font-size : 14px;
 margin-right : 5px;
 padding : 15px 35px;
@@ -810,7 +810,7 @@ width : 731px !important ;
   text-transform: uppercase;
   text-decoration: underline;
   font-size: 25px;
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .formaciones ul{
