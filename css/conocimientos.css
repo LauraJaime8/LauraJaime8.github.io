@@ -18,8 +18,12 @@ a:focus {
 	outline: none;
 }
 
-#giraldo h2{
+#idiomas h2{
 	color: #FFC107;
+	text-align: center;
+}
+#idiomas p{
+
 }
 #esi h2{
 	color: #FFC107;
@@ -51,8 +55,8 @@ a:focus {
 }
 
 .tm-section-idiomas { background-image: url(../img/idiomas.jpg); }
-.tm-section-unity { background-image: url(../img/idiomas.jpg); }
-.tm-section-testimonials { background-image: url(../img/image-04.jpg); }
+.tm-section-program { background-image: url(../img/programacion.jpg); }
+.tm-section-ide { background-image: url(../img/ide.png); }
 .tm-section-contact { background-image: url(../img/image-05.jpg); }
 
 .navbar-toggler {
@@ -71,7 +75,7 @@ h1, h2, p {	color: white; }
 p {
 	font-weight: 300;
 	line-height: 1.8;
-	margin-bottom: 35px;
+	/*margin-bottom: 35px;*/
 	color: white;
 }
 
@@ -272,10 +276,58 @@ p {
 	}
 }
 
-#cisco h2{
-	color: #FFC107;
+.progress-title{
+    font-size: 16px;
+    font-weight: 700;
+    color: #011627;
+    margin: 0 0 20px;
 }
-
-#unity h2{
-	color: #FFC107;
+.progress{
+    height: 10px;
+    background: #cbcbcb;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 30px;
+    overflow: visible;
+}
+.progress .progress-bar{
+    box-shadow: none;
+    position: relative;
+    -webkit-animation: animate-positive 2s;
+    animation: animate-positive 2s;
+}
+.progress .progress-bar:after{
+    content: "";
+    display: block;
+    border: 15px solid transparent;
+    border-bottom: 21px solid transparent;
+    position: absolute;
+    top: -26px;
+    right: -12px;
+}
+.progress .progress-value{
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    position: absolute;
+    top: -40px;
+    right: 0;
+}
+.progress.pink .progress-bar:after{
+    border-bottom-color: #ff4b7d;
+}
+.progress.green .progress-bar:after{
+    border-bottom-color: #5fad56;
+}
+.progress.yellow .progress-bar:after{
+    border-bottom-color: #e8d324;
+}
+.progress.blue .progress-bar:after{
+    border-bottom-color: #3485ef;
+}
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
 }
