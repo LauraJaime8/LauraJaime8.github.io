@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Laura Jaime - Formacion complementaria</title>
+
+<!-- Bootstrap core CSS -->
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Fuentes-->
+<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+<!-- Estilos -->
+<link href="css/grayscale.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/estilo-formacion-compl.css" rel="stylesheet">
+<link href="css/conocimientos.css" rel="stylesheet">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108109552-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108109552-3');
+</script>
+
+</head>
+
+<body id="page-top">
+      <!-- Barra de navegacion -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html">>Laura Jaime</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      Menu
+      <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#sobremi_sec">Sobre mi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#formacion_sec">Mi formación</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#ctn_sec">Mis habilidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#proyectos_sec">Mis proyectos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="index.html#ctn_sec">Contáctame</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Barra de navegacion -->
+
+          <!-- Cisco-->
+      <section class="tm-section tm-section-idiomas" id="idiomas">
+        <div class="tm-page-content-width">
+          <div class="tm-bg-black-translucent tm-content-box tm-content-box-right tm-flex-center">
+            <div class="tm-content-box-inner">
+              <h2 class="tm-section-title">Idiomas</h2>
+              <p>Mi idioma nativo es el español así que tengo capacidades de cualquier índole en este idioma.</p>
+              <p>Inglés</p>
+              <p>
+                Capacidad oral: bajo
+                Capacidad de escritura: medio
+                Capacidad de lectura: medio-alto
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Unity-->
+      <section class="tm-section tm-section-unity" id="unity">
+        <div class="tm-page-content-width">
+          <div class="tm-bg-black-translucent tm-content-box tm-flex-center">
+            <div class="tm-content-box-inner">
+              <h2 class="tm-section-title">Lenguajes de programación</h2>
+              <p>Impartido por la <a href="https://www.upv.es/">Universidad Politécnica de Valencia</a> en la plataforma<a href="https://www.edx.org/es/course/introduccion-al-desarrollo-de-upvalenciax-uny201-x-1"> edX</a>.</p>
+              <p>En este curso aprendí a usar el entorno de Unity, los conceptos básicos, a comenzar a usar el motor de juegos, a realizar pequeños scripts y para finalizar realicé un ejemplo del juego Fruit Ninja.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+        </div>
+
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>         <!-- jQuery (https://jquery.com/download/) -->
+        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap (http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h) -->
+        <script src="js/bootstrap.min.js"></script>             <!-- Bootstrap js (v4-alpha.getbootstrap.com/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>  <!-- Single page nav (https://github.com/ChrisWojcik/single-page-nav) -->
+
+        <script>
+
+            // Check scroll position and add/remove background to navbar
+            function checkScrollPosition() {
+
+                if($(window).width() < 767) {
+                    $(".tm-nav").removeClass("scroll");
+                    return;
+                }
+
+                if($(window).scrollTop() > 50) {
+                  $(".tm-nav").addClass("scroll");
+              } else {
+                  $(".tm-nav").removeClass("scroll");
+              }
+            }
+
+            $(document).ready(function () {
+                // Single page nav
+                $('.tm-nav').singlePageNav({
+                    offset: 57,
+                    filter: ':not(.external)',
+                    updateHash: true
+                });
+
+                checkScrollPosition();
+
+                // navbar
+                $('.navbar-toggle').click(function(){
+                    $('.main-menu').toggleClass('show');
+                });
+
+                $('.main-menu a').click(function(){
+                    $('.main-menu').removeClass('show');
+                });
+            });
+
+            $(window).on("scroll", function() {
+                checkScrollPosition();
+            });
+
+            $('#tmNavbar a').click(function(){
+                $('#tmNavbar').collapse('hide');
+            });
+
+        </script>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/appear.js"></script>
+        <script src="js/main.js"></script>
+
+
+</body>
+</html>

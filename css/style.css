@@ -101,10 +101,14 @@ text-align : center;
 color: black;
 }
 .titulo_sec h2 {
-color : #606060;
+color : white;
 font-size : 12px;
 text-transform : uppercase;
 letter-spacing : 1px;
+}
+
+.titulo_sec h1{
+  color: white;
 }
 .titulo_sec img{
   /* cambia estos dos valores para definir el tamaño de tu círculo */
@@ -356,45 +360,28 @@ text-align : center;
 padding : 61px 0;
 
 }
-.conoc:hover .conoc_hoverly {
-display : block;
-}
 .conoc > h2 {
-color : #515050;
+color : white;
 font-size : 14px;
 font-weight : 400;
 text-transform : uppercase;
-}
-.conoc_hoverly h2 {
-color : #515050;
-font-size : 14px;
-font-weight : 400;
-text-transform : uppercase;
-margin : 0;
-padding-bottom : 30px;
 }
 .conoc i {
 font-size : 50px;
-color : #03B0F0;
+color : white;
 position : relative;
 }
-.conoc_hoverly {
 
-transition: all 1s ease 0s;
-	-moz-transition: all 1s ease 0s;
-	-webkit-transition: all 1s ease 0s;border :1px solid #03B0F0;
-display : none;
-padding : 25px 5px;
-position : absolute;
-top : 0;
-background : #fff;
+.conoc:hover i{
+  color : yellow;
+  font-size: 55px;
 }
-.conoc_hoverly i {
-background : none 0 0 repeat scroll #fff;
-font-size : 50px;
-position : relative;
-top : -50px;
+
+.conoc:hover h2{
+  color:yellow;
+  font-size: 16px;
 }
+
 #proyectos_sec {
 background : none 0 0 repeat scroll #D8D8D8;
 padding : 70px 0;
