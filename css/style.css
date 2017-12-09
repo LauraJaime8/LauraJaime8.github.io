@@ -106,9 +106,11 @@ font-size : 12px;
 text-transform : uppercase;
 letter-spacing : 1px;
 }
-
-.titulo_sec h1{
-  color: white;
+#proyectos_sec .titulo_sec h1{
+  color: black;
+}
+#proyectos_sec p{
+  color: black;
 }
 .titulo_sec img{
   /* cambia estos dos valores para definir el tamaño de tu círculo */
@@ -158,6 +160,22 @@ background : #0B3861;
 }
 #intereses_sec {
 padding-top : 30px;
+background: #2E2E2E;
+}
+#intereses_sec h1{
+  color: white;
+}
+#intereses_sec img{
+  width: 350px;
+  height: 250px;
+}
+#intereses_sec a{
+  color:white;
+  text-transform: none;
+}
+#intereses_sec p{
+  color:white;
+  font-size: 15px;
 }
 .all_brouse_btn {
 border : #666666 solid 1px;
@@ -257,13 +275,14 @@ filter:  opacity(.6);
 }
 
 #proyectos_sec .all-portfolios img{
-width: 250px;
-height: 250px;
+width: 150px;
+height: 150px;
 }
 
 
 #proyectos_sec .all-portfolios p {
-text-align: center;
+text-align: left;
+margin: auto;
 }
 
 #proyectos_sec .single-portfolio {
@@ -386,7 +405,7 @@ margin: 10px;
 }
 
 #proyectos_sec {
-background : none 0 0 repeat scroll #D8D8D8;
+background : none 0 0 repeat scroll #E6E6E6;
 padding : 70px 0;
 }
 #tm_sec {
@@ -550,6 +569,7 @@ display : none;
 }
 #ctn_sec {
 padding : 70px 0;
+background: #E6E6E6;
 }
 #cnt_form .btn {
 background : #353638;
@@ -561,7 +581,7 @@ border : #0080FF solid 1px;
 .cnt_info ul {
 margin : 0;
 padding : 0;
-border-left : 1px solid #C7C7C7;
+border-left : 1px solid black;
 padding-left : 30px;
 }
 .cnt_info ul li {
@@ -569,16 +589,16 @@ list-style : none outside none;
 padding : 15px 0;
 }
 .cnt_info ul li i {
-color : #818181;
+color : black;
 float : left;
 margin-top : 5px;
 }
 .cnt_info p {
 padding-left : 30px;
+color: black;
 }
-.map_area {
-margin-bottom : 93px;
-}
+
+
 .ft ul {
 margin : 0;
 padding : 0;
@@ -590,7 +610,7 @@ padding-right : 10px;
 display : inline;
 }
 .ft ul li a {
-border : #818181 solid 1px;
+border :black solid 1px;
 border-radius : 50px;
 display : inline-block;
 margin : 0 auto;
@@ -598,7 +618,7 @@ padding : 7px 11px;
 text-align : center;
 }
 .ft ul li a i {
-color : #363636;
+color : black;
 font-size : 15px;
 transition: all 1s ease 0s;
 -moz-transition: all 1s ease 0s;
@@ -619,6 +639,7 @@ text-align : center;
 
 #ft_sec {
 padding : 70px 0;
+background: #E6E6E6;
 }
 .copy_right {
 margin : 0;
