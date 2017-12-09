@@ -4,7 +4,6 @@ body {
 	font-weight: 300;
 	overflow-x: hidden;
 }
-
 body p{
 	color:white;
 	font-size: 16px;
@@ -17,32 +16,6 @@ a:focus {
 	text-decoration: none;
 	outline: none;
 }
-
-#idiomas p{
-
-}
-#esi h2{
-	color: #FFC107;
-}
-
-#esi img{
-	height: 150px;
-	width: 150px;
-	/* los siguientes valores son independientes del tamaño del círculo */
-	background-repeat: no-repeat;
-	background-position: 50%;
-	/*border-radius: 50%;*/
-	background-size: 100% auto;
-	border: 5px solid #666;
-	display:block;
-	margin:auto;
-}
-.container-fluid {
-	padding-left: 0;
-	padding-right: 0;
-	overflow-x: hidden;
-}
-
 .tm-section {
 	background-position: center center;
     background-size: cover;
@@ -75,21 +48,18 @@ a:focus {
 	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 	font-weight: bold;
 	color: #ff9800;
-
 }
+
 .tm-section h4{
-
 	color: #fff176;
-
 }
 
 
 .tm-section p{
 	font-size: 15px;
 	color: #fafafa;
-
-
 }
+
 .navbar-toggler {
     background-color: rgba(0,0,0,0.3);
     background-image: url(../img/tm-navbar.png);
@@ -106,7 +76,6 @@ h1, h2, p {	color: white; }
 p {
 	font-weight: 300;
 	line-height: 1.8;
-	/*margin-bottom: 35px;*/
 	color: white;
 }
 
@@ -149,30 +118,6 @@ p {
     padding-right: 2rem;
 }
 
-.tm-hero {
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-ms-flex-align: center;
-	    -webkit-align-items: center;
-	        align-items: center;
-	-ms-flex-pack: center;
-	    -webkit-justify-content: center;
-	        justify-content: center;
-	text-align: center;
-	min-height: 640px; /*for IE 11 & 10*/
-}
-
-.tm-hero-title { font-size: 3rem; }
-.tm-hero-subtitle {
-	font-size: 1.4rem;
-	margin-bottom: 0;
-}
-
-.tm-hero-title,
-.tm-hero-subtitle {
-	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
-}
 
 .tm-bg-black-translucent { background-color: rgba(0, 0, 0, 0.5); }
 
@@ -225,10 +170,7 @@ p {
 }
 .tm-margin-b-0 { margin-bottom: 0; }
 
-.tm-section-testimonials {
-	padding-top: 80px;
-	padding-bottom: 80px;
-}
+
 
 .form-control {
 	background-color: rgba(0, 0, 0, 0.4);
@@ -245,38 +187,12 @@ p {
 
 .form-group { margin-bottom: 1.2rem; }
 
-.tm-submit-btn {
-	color: white;
-    background-color: rgba(0,0,0,0.3);
-    border: none;
-    padding: 1rem 2.1rem;
-    font-size: 1.3rem;
-    transition: all 0.3s ease;
-}
-
-.tm-submit-btn:hover,
-.tm-submit-btn:active {
-	background-color: rgba(0,0,0,0.5);
-}
-
-.tm-section-contact { position: relative; }
-
-.tm-copyright-div {
-	padding: 0.5rem 2.4rem 0.5rem 1.2rem;
-	position: absolute;
-    bottom: 0;
-    display: inline-block;
-}
-
-.tm-copyright-text { margin-bottom: 0; }
 
 @media screen and (max-width: 991px) {
 	.tm-3-col-textbox {
 		width: 50%;
 		margin-bottom: 30px;
 	}
-
-	.tm-copyright-div {	position: static; }
 }
 
 @media screen and (max-width: 767px) {
