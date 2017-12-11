@@ -25,7 +25,7 @@ a:focus {
 
 .tm-section-idiomas { background-image: url(../img/idiomas.jpg); }
 .tm-section-program { background-image: url(../img/programacion.jpg); }
-.tm-section-ide { background-image: url(../img/ide.png); }
+.tm-section-ide { background-image: url(../img/ide.jpg); }
 .tm-section-datos { background-image: url(../img/datos.jpg); }
 .tm-section-gestores { background-image: url(../img/gestores.jpg); }
 .tm-section-modelado { background-image: url(../img/modelado.jpg); }
@@ -119,7 +119,7 @@ p {
 }
 
 
-.tm-bg-black-translucent { background-color: rgba(0, 0, 0, 0.5); }
+.tm-bg-black-translucent { background-color: #212121; opacity: 0.95;}
 
 .tm-content-box {
 	height: 100%;
@@ -255,7 +255,7 @@ p {
 .progress .progress-value{
     font-size: 15px;
     font-weight: bold;
-    color: #000;
+    color: #FFECB3;
     position: absolute;
     top: -40px;
     right: 0;
