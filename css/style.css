@@ -7,6 +7,7 @@ transform : rotate(0deg);
 transform : rotate(360deg);
 }
 }
+
 #nav_menu ul {
 float : right;
 list-style : none outside none;
@@ -304,12 +305,15 @@ border-bottom : 1px solid #00AFF0;
 padding : 70px 0;
 background: #E6E6E6;
 }
-#cnt_form .btn {
+#cnt_form button {
 background : #353638;
 padding : 10px 35px;
 }
 #cnt_form .form-control:focus {
 border : #0080FF solid 1px;
+}
+#cnt_form p{
+  color: black;
 }
 .cnt_info ul {
 margin : 0;

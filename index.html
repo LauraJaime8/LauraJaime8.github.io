@@ -432,10 +432,18 @@
     			</div>
     			<div class="col-sm-6">
     				<div id="cnt_form">
-              <form method="POST" action="http://formspree.io/laurajv02@gmail.com">
+              <form id="contact-form" class="contact" method="POST" action="http://formspree.io/laurajv02@gmail.com">
+                <div class="form-group">
+                  <p>Email</p>
                   <input name="email" placeholder="Tu email" type="email">
-                  <textarea name="message" placeholder="Tu mensajes"></textarea>
-                  <button type="submit">Enviar</button>
+                </div>
+                <div class="form-group">
+                  <p>Mensaje</p>
+                  <textarea name="message" placeholder="Tu mensaje"></textarea>
+                </div>
+                  <div class="form-group">
+                    <button type="submit">Enviar</button>
+                  </div>
               </form>
     				</div>
     			</div>
