@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
+<meta name="referrer" content="origin"/>
+
 
     <title>Laura Jaime</title>
     <link rel="icon" href="img/favicon3.ico">
@@ -430,20 +432,11 @@
     			</div>
     			<div class="col-sm-6">
     				<div id="cnt_form">
-    					<form id="contact-form" class="contact" name="contact-form" method="post" action="enviar.php">
-    						<div class="form-group">
-    						<input type="text" name="nombre" class="form-control name-field" required="required" placeholder="Tu nombre">
-    						</div>
-    						<div class="form-group">
-    							<input type="email" name="email" class="form-control mail-field" required="required" placeholder="Tu e-mail">
-    						</div>
-    						<div class="form-group">
-    							<textarea name="message" id="mensaje" required="required" class="form-control" rows="8" placeholder="Mensaje"></textarea>
-    						</div>
-    						<div class="form-group">
-    							<button type="submit" class="btn btn-primary">Enviar</button>
-    						</div>
-    					</form>
+              <form method="POST" action="http://formspree.io/laurajv02@gmail.com">
+                  <input name="email" placeholder="Tu email" type="email">
+                  <textarea name="message" placeholder="Tu mensajes"></textarea>
+                  <button type="submit">Enviar</button>
+              </form>
     				</div>
     			</div>
     			<div class="col-lg-6 col-md-6 col-sm-6">
