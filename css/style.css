@@ -135,6 +135,25 @@ text-align : center;
 #habilidades_sec {
 padding-top : 30px;
 background : none 0 0 repeat scroll #D8D8D8;
+box-sizing: border-box;
+}
+
+#habilidades_sec img{
+  margin-left: auto;
+      margin-right: auto;
+      display: block;
+
+}
+
+#habilidades_sec h4{
+  color:black;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+}
+#habilidades_sec p{
+  color:black;
+  text-align: center;
 }
 .skills-wrap .container {
 padding : 70px 0;
@@ -764,7 +783,7 @@ width : 355px !important ;
   line-height: 1.8em;
 }
 #habilidades_sec h4 {
-  font-size: 10px;
+  font-size: 1em;
   line-height: 1.8em;
 }
 
@@ -772,8 +791,7 @@ width : 355px !important ;
   font-size: 0.875em;
   line-height: 1.8em;
   text-transform:none;
-
-
+  font-family: 'PT Sans', sans-serif;
 }
 #habilidades_sec h3 strong {
   color: #0f283e;
