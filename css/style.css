@@ -229,12 +229,16 @@ filter:  opacity(.6);
 #proyectos_sec .all-portfolios img{
 width: 150px;
 height: 150px;
+margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
 #proyectos_sec .all-portfolios p {
-text-align: left;
+text-align: center;
 margin: auto;
+
 }
 
 #proyectos_sec .single-portfolio {
