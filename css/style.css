@@ -894,6 +894,7 @@ margin-top: 99px;
   padding: 0;
 }
 
+/*Mi foto*/
 #v-card-holder #v-card #profile img{
   width: 400px;
   height: auto;
@@ -905,4 +906,12 @@ margin-left: -12px;
 margin-top: 12px;
 height: 200%;
 margin: auto;
+}
+
+/*Iconos*/
+.info-headings img{
+    margin-right: 10px;
+}
+#conocimientos_sec .titulo_sec{
+  color:white;
 }
