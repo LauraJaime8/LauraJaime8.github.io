@@ -228,6 +228,7 @@ p {
     font-weight: 700;
     color: #9fa8da;
     margin: 0 0 15px;
+		text-transform: none;
 }
 .progress{
     height: 10px;
