@@ -1,0 +1,35 @@
+#sobremi_sec {
+  padding: 70px;
+  background: #E6E6E6;
+}
+
+.titulo_sec {
+  margin: 0 auto;
+  padding: 0 0 25px 0;
+  text-align: center;
+  color: black;
+
+  h2 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  img {
+    height: 150px;
+    width: 150px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+    border: 5px solid #666;
+  }
+}
+
+
+.proyectos_sec {
+   h1,
+   p {
+    color: black;
+  }
+}
