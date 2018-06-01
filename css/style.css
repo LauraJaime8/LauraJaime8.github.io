@@ -6,10 +6,18 @@ body {
   margin-left: 41%;
 }
 
+.avatar {
+  margin-bottom: 28px;
+}
+
 .name {
   margin-left: 39%;
   margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
+}
+
+.name img {
+  margin-left: 20px;
 }
 
 .title-logo {
@@ -20,8 +28,6 @@ body {
 .container-social a {
   margin-right: 20px;
   cursor: pointer;
-  transition: color 300ms ease, margin-top 300ms ease;
-  transform: translateZ(0);
 }
 
 .avatar img {
@@ -30,4 +36,29 @@ body {
   border-radius: 100%;
   border: 4px solid #540032;
   width: 100px;
+}
+
+.fab {
+  color: #7D7566;
+  transition: transform .3s ease-out;
+}
+
+i:hover {
+   transform: translate(0, -5px);
+}
+
+i.fa-github:hover {
+  color: black;
+}
+
+i.fa-linkedin-in:hover {
+  color: #0077B5;
+}
+
+i.fa-soundcloud:hover {
+  color: #ff8800;
+}
+
+i.fa-flickr:hover {
+  color: #ff0084;
 }
