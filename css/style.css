@@ -1,28 +1,113 @@
 body {
-  background-color: #F2F2F2;
 }
 
-.container-social {
-  margin-left: 41%;
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
 }
 
-.avatar {
-  margin-bottom: 28px;
+.left-text {
+  cursor: default;
+  margin-left: 98px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.name-pos {
+  margin-top: -50px;
+  margin-left: 10px;
+}
+
+.prof {
+  margin-left: -21px;
+  margin-top: -44px;
+}
+
+.navbar a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #000;
+}
+
+.text {
+  transition: background-size .4s ease;
+  background: linear-gradient(to bottom, transparent 62%, #fff87e 0) center center/0% 75% no-repeat;
+  font-size: 1.5rem;
+  padding: 0 6px 2px 6px;
+  cursor: pointer;
+  color: rgba(80, 89, 113, 0.7);
+  letter-spacing: .08rem;
+}
+
+.text:hover {
+  background-size: 100% 100%;
+}
+
+.col .left-text.b .info {
+  font-size: 13px;
+  font-weight: 400;
+}
+.col .left-text.b .info a{
+  text-decoration: none;
+  color: #000;
+}
+
+.col .left-text.b .info a:hover{
+  color: #fff;
+}
+
+
+
+
+.col .left-text.b {
+  background-color: cornflowerblue;
+  transition: all .2s ease-in-out;
+  font-size: 1.5rem;
+  padding: 12px;
+  height: 300px;
+  width: 200px;
+}
+
+.col .left-text.b:hover {
+  transform: scale(1.3);
+  background-image: url('../assets/img//bizneo.jpg');
+  background-size: 200px;
+}
+
+.col .left-text.b .text {
+  color: #000;
+}
+
+.text:active {
+  background-size: 80% 100%;
+}
+
+.col {
+  display: inline-flex;
 }
 
 .name {
-  margin-left: 39%;
-  margin-bottom: 50px;
-  font-family: 'Roboto', sans-serif;
+  margin-bottom: 28px;
+  cursor: default;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 50px;
+  color: #E3E3B5;
 }
 
 .name img {
   margin-left: 20px;
 }
 
-.title-logo {
-  margin-bottom: -17px;
-  width: 49px;
+.container-social {
+  margin-top: 356px;
+  margin-left: -1000px;
+  text-align: center;
 }
 
 .container-social a {
@@ -30,15 +115,8 @@ body {
   cursor: pointer;
 }
 
-.avatar img {
-  margin-top: 160px;
-  margin-left: 44%;
-  border-radius: 100%;
-  border: 4px solid #540032;
-  width: 100px;
-}
-
-.fab {
+.fab,
+.fas {
   color: #7D7566;
   transition: transform .3s ease-out;
 }
@@ -61,4 +139,12 @@ i.fa-soundcloud:hover {
 
 i.fa-flickr:hover {
   color: #ff0084;
+}
+
+i.fa-stack-overflow:hover {
+  color: #f48024;
+}
+
+i.fa-envelope:hover {
+  color: #ea4335;
 }
