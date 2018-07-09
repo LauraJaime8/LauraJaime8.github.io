@@ -49,5 +49,5 @@ activate :deploy do |deploy|
   deploy.deploy_method = :git
   deploy.remote = 'git@github.com:LauraJaime8/LauraJaime8.github.io.git'
   deploy.branch = 'master'
-  deploy.build_before = true
+  deploy.build_before = false
 end
