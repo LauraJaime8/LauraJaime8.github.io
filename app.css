@@ -19,14 +19,15 @@ body {
   font-size: 24px;
 }
 
-.container {
+.containere {
   display: flex;
   position: absolute;
+  height: 1000px;
 }
 
 .texto {
-  padding-top: 100px;
-  width: 96%;
+  padding-top: 30px;
+  width: 76%;
   padding-left: 50px;
 }
 
@@ -55,35 +56,36 @@ body {
   display: flex;
 }
 
+.buttons {
+  display: flex;
+
+}
 .button {
-  background-color: #632b30;
+  background-color: #3D4773;
   width: 88px;;
     border: none;
     color: white;
-    padding: 18px 15px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin-top: 23%;
-    margin-right: 250px;
+    margin-right: 100px;
     height: 20px;
     font-family: 'Raleway', sans-serif;
     border-radius: 4px;
     cursor: pointer;
-
-
-
-
-
 }
+
+
 
 .button a {
   cursor: pointer;
 }
 
 .second-text {
-  width: 72%;
+  width: 58%;
 
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -124,12 +126,16 @@ body {
 }
 
 .image {
-  border-radius: 100%;
-  box-shadow: 2px 2px 5px #999;
-  width: 300px;
-  margin-left: 34%;
+  padding-top: 170px;
+  width: 663px;
+  margin-left: 720px;
+  position: absolute;
 }
-
+.photo {
+  max-width: 99%;
+  border-radius: 4px;
+  box-shadow: 8px 8px 4px #343C44;
+}
 .subcard {
   display: flex;
 }
