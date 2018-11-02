@@ -297,6 +297,10 @@ margin-left: 300px;}
 .timeline li {
   padding: 1em 0;
 }
+.link {
+  color: #162153 !important;
+}
+
 
 .timeline li:after {
   content: "";
